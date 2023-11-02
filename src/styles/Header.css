@@ -1,0 +1,53 @@
+.header {
+  padding-inline: 1em;
+}
+
+.header-content {
+  max-width: 1700px;
+  /* padding-block: 3px; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 6em;
+  margin-top: 5px;
+  /* will-change: filter; */
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.scores {
+  /* border: 1px solid; */
+} 
+
+.scores * {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.instruction {
+  font-size: 18px;
+  color: bisque;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 4em;
+    margin-top: 5px;
+  }
+
+  .scores * {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
